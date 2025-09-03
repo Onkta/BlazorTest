@@ -1,6 +1,17 @@
-﻿<p>Server is online</p>
+﻿<p>
+    Server is online
+</p>
+
+<p>
+    @s1.Name is in @s1.City -> Status - @(s1.IsOnline?"online" : "offline") at @DateTime.Now
+</p>
 
 
 @code {
-
+    private Server s1 = new Server
+    {
+        Name = "Server_1",
+        City = "Karlsruhe",
+        ServerID = 1
+    };
 }
