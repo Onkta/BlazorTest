@@ -6,7 +6,7 @@
         private static List<string> _cities = new List<string>()
         {
             "Karlsruhe",
-            "Hamburg",
+            "Berlin",
             "Freiburg"
         };
 

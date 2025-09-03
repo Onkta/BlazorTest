@@ -3,19 +3,29 @@
 
 
 <h3>Servers</h3>
-<br />
-<br />
-<div class="card">
+
+<div class="card container-fluid text-center">
     <div class="card-header"></div>
-    <div class="card m-3">
-        <div class="m-3">
+        <div class="card-body m-3 row w-50 align-middle" style="width:100%">
             @foreach (var city in cities)
             {
-                <button class="btn-sm btn-outline-success m-2">@city</button>
+                <div class="col w-25">
+                    <div class="card m-3">
+                        <div class="card-header">
+                            @city
+                        </div>
+                        <div class="card-body">
+                            <img class="card-img-top" src="@("/images/" + city + ".png")" style="width:100%;height:100%"/>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn-sm btn-primary">Show Server</button>
+                        </div>
+                    </div>
+                </div>
             }
         </div>
         <div>
-            <table class="table table-borderless table-active">
+            <table class="table table-borderless table-striped ">
                 <thead>
                     <tr>
                         <th>Sever</th>
@@ -37,7 +47,6 @@
                 </tbody>
             </table>
         </div>
-    </div>
     <div class="card-footer"></div>
 </div>
 

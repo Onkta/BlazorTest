@@ -10,10 +10,10 @@ namespace BlazorTest.Models
         {
             new Server{ Name = "Server_1", City = "Karlsruhe", ServerID = 1},
             new Server{ Name = "Server_2", City = "Freiburg", ServerID = 2},
-            new Server{ Name = "Server_3", City = "Hamburg", ServerID = 3},
+            new Server{ Name = "Server_3", City = "Berlin", ServerID = 3},
             new Server{ Name = "Server_4", City = "Karlsruhe", ServerID = 4},
-            new Server{ Name = "Server_5", City = "Hamburg", ServerID = 5},
-            new Server{ Name = "Server_6", City = "Hamburg", ServerID = 6},
+            new Server{ Name = "Server_5", City = "Berlin", ServerID = 5},
+            new Server{ Name = "Server_6", City = "Berlin", ServerID = 6},
             new Server{ Name = "Server_7", City = "Freiburg", ServerID = 7},
             new Server{ Name = "Server_8", City = "Karlsruhe", ServerID = 8},
         };

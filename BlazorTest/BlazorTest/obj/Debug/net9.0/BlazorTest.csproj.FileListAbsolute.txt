@@ -46,7 +46,6 @@
 \\Mac\Home\Desktop\HomeGit\BlazorTest\BlazorTest\BlazorTest\obj\Debug\net9.0\compressed\p5urepu7qa-j5mq2jizvt.gz
 \\Mac\Home\Desktop\HomeGit\BlazorTest\BlazorTest\BlazorTest\obj\Debug\net9.0\compressed\ie4ctfqihy-06098lyss8.gz
 \\Mac\Home\Desktop\HomeGit\BlazorTest\BlazorTest\BlazorTest\obj\Debug\net9.0\compressed\jwnp6whvxh-nvvlpmu67g.gz
-\\Mac\Home\Desktop\HomeGit\BlazorTest\BlazorTest\BlazorTest\obj\Debug\net9.0\compressed\bhq2y1h9sg-s35ty4nyc5.gz
 \\Mac\Home\Desktop\HomeGit\BlazorTest\BlazorTest\BlazorTest\obj\Debug\net9.0\compressed\1l0j291za8-pj5nd1wqec.gz
 \\Mac\Home\Desktop\HomeGit\BlazorTest\BlazorTest\BlazorTest\obj\Debug\net9.0\compressed\5gwq1nhwsq-46ein0sx1k.gz
 \\Mac\Home\Desktop\HomeGit\BlazorTest\BlazorTest\BlazorTest\obj\Debug\net9.0\compressed\cnz3up1lg2-v0zj4ognzu.gz
@@ -78,3 +77,4 @@
 \\Mac\Home\Desktop\HomeGit\BlazorTest\BlazorTest\BlazorTest\obj\Debug\net9.0\BlazorTest.pdb
 \\Mac\Home\Desktop\HomeGit\BlazorTest\BlazorTest\BlazorTest\obj\Debug\net9.0\BlazorTest.genruntimeconfig.cache
 \\Mac\Home\Desktop\HomeGit\BlazorTest\BlazorTest\BlazorTest\obj\Debug\net9.0\ref\BlazorTest.dll
+\\Mac\Home\Desktop\HomeGit\BlazorTest\BlazorTest\BlazorTest\obj\Debug\net9.0\compressed\bhq2y1h9sg-6aiweu7apk.gz
