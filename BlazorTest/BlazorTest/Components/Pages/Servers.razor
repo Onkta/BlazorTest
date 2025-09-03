@@ -5,11 +5,44 @@
 <h3>Servers</h3>
 <br />
 <br />
-<ServerComponent></ServerComponent>
-<br />
-<br />
-<ServerComponent></ServerComponent>
+<div class="card">
+    <div class="card-header"></div>
+    <div class="card m-3">
+        <div class="m-3">
+            @foreach (var city in cities)
+            {
+                <button class="btn-sm btn-outline-success m-2">@city</button>
+            }
+        </div>
+        <div>
+            <table class="table table-borderless table-active">
+                <thead>
+                    <tr>
+                        <th>Sever</th>
+                        <th>City</th>
+                        <th>Status</th>
+                        <th>LastCheck</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var server in servers)
+                    {
+                        <tr>
+                            <td>@server.Name</td>
+                            <td>@server.City</td>
+                            <td style="color:@(server.IsOnline ? "green" : "red")">@(server.IsOnline ? "Online" : "Offline")</td>
+                            <td>@DateTime.Now</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="card-footer"></div>
+</div>
+
 
 @code {
-    
+    private List<Server> servers = ServerRepository.GetServers();
+    private List<string> cities = CitiesRepository.GetCities();
 }

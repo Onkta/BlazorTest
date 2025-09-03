@@ -9,13 +9,13 @@ namespace BlazorTest.Models
         private static List<Server> _servers = new List<Server>
         {
             new Server{ Name = "Server_1", City = "Karlsruhe", ServerID = 1},
-            new Server{ Name = "Server_2", City = "Berlin", ServerID = 2},
-            new Server{ Name = "Server_3", City = "Frankfurt", ServerID = 3},
-            new Server{ Name = "Server_4", City = "Stuttgart", ServerID = 4},
+            new Server{ Name = "Server_2", City = "Freiburg", ServerID = 2},
+            new Server{ Name = "Server_3", City = "Hamburg", ServerID = 3},
+            new Server{ Name = "Server_4", City = "Karlsruhe", ServerID = 4},
             new Server{ Name = "Server_5", City = "Hamburg", ServerID = 5},
-            new Server{ Name = "Server_6", City = "Dortmund", ServerID = 6},
-            new Server{ Name = "Server_7", City = "Freibrug", ServerID = 7},
-            new Server{ Name = "Server_8", City = "New York", ServerID = 8},
+            new Server{ Name = "Server_6", City = "Hamburg", ServerID = 6},
+            new Server{ Name = "Server_7", City = "Freiburg", ServerID = 7},
+            new Server{ Name = "Server_8", City = "Karlsruhe", ServerID = 8},
         };
 
         public static void AddServer(Server server)

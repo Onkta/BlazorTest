@@ -3,7 +3,7 @@
 </p>
 
 <p>
-    @s1.Name is in @s1.City -> Status - @s1.IsOnline at @DateTime.Now
+    @s1.Name is in @s1.City -> Status - @(s1.IsOnline?"online" : "offline") at @DateTime.Now
 </p>
 
 
