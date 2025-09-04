@@ -31,7 +31,7 @@ namespace BlazorTest.Models
         public static void AddServer(Server server)
         {
             var maxID = _servers.Max(s => s.ServerID);
-            server.ServerID = maxID++;
+            server.ServerID = maxID +1;
             _servers.Add(server);
         }
 

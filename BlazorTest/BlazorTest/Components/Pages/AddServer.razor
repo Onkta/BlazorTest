@@ -1,13 +1,10 @@
-﻿@page "/Servers/{id:int}"
+﻿@page "/servers/add"
 
-@inject NavigationManager navigationManager
+@inject NavigationManager navmgr
 
-<h3>Edit Server</h3>
+<h3>AddServer</h3>
 
-@if(s1 != null)
-{
-    <EditForm Model="s1" FormName="EditServerForm" OnValidSubmit="Submit">
-        <InputNumber @bind-value="s1.ServerID" hidden></InputNumber>
+    <EditForm Model="s1" FormName="AddServerForm" OnValidSubmit="Submit">
         <DataAnnotationsValidator></DataAnnotationsValidator>
         <ValidationSummary></ValidationSummary>
 
@@ -33,23 +30,14 @@
         </div>
 
     </EditForm>
-}
 
 @code {
-    [Parameter]
-    public int Id { get; set; }
-
-    [SupplyParameterFromForm(FormName = "EditServerForm")]
-    private Server s1 { get; set; }
-
-    protected override void OnParametersSet()
-    {
-        s1 ??= ServerRepository.GetServerByID(Id);
-    }
+    [SupplyParameterFromForm(FormName = "AddServerForm")]
+    private Server s1 { get; set; } = new Server();
 
     private void Submit()
     {
-        ServerRepository.UpdateServer(s1);
-        //navigationManager.NavigateTo("servers");
+        ServerRepository.AddServer(s1);
+        //navmgr.NavigateTo("servers");
     }
 }
