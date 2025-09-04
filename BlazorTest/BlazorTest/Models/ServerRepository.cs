@@ -40,10 +40,10 @@ namespace BlazorTest.Models
 
             Server s1 = new Server
             {
-                ServerID = id,
-                Name = _servers[id].Name,
-                City = _servers[id].City,
-                IsOnline = _servers[id].IsOnline,
+                ServerID = server.ServerID,
+                Name = server.Name,
+                City = server.City,
+                IsOnline = server.IsOnline,
             };
 
             return s1;
