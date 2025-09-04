@@ -5,8 +5,26 @@
 @if(s1 != null)
 {
     <EditForm Model="s1">
-        <InputText @bind-Value="s1.Name"></InputText>
-        <InputText @bind-Value="s1.City"></InputText>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Servername</label>
+            <InputText type="text" class="form-control" id="exampleFormControlInput1" placeholder="ServerName..." @bind-value="s1.Name">
+            </InputText>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">City</label>
+            <InputText type="text" class="form-control" id="exampleFormControlInput1" placeholder="City...." @bind-value="s1.City">
+            </InputText>
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-check-label">isOnline</label>
+            <InputCheckbox class="form-check-input" @bind-Value="s1.IsOnline"></InputCheckbox>
+        </div>
+
+        <div class="mb-3">
+            <a class="btn-sm btn-secondary" href="servers">Close</a>
+        </div>
+
     </EditForm>
 }
 
