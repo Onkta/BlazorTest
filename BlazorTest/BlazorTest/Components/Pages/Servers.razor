@@ -47,7 +47,12 @@
                             <td>@server.City</td>
                             <td style="color:@(server.IsOnline ? "green" : "red")">@(server.IsOnline ? "Online" : "Offline")</td>
                             <td>@DateTime.Now</td>
-                            <td><a class="btn-sm btn-info" href="/Servers/@server.ServerID">Show Details</a></td>
+                            <td>
+                                <a class="btn-sm btn-info" href="/Servers/@server.ServerID">Show Details</a>
+                            <EditForm Model="server" FormName="@($"ServerForm_{server.ServerID}")" OnValidSubmit="@(() => { DeleteServer(server.ServerID); })">
+                                <button class="btn-sm btn-danger" type="submit">Delete</button>
+                            </EditForm>
+                        </td>
                         </tr>
                     }
                 </tbody>
@@ -60,4 +65,9 @@
 @code {
     private List<Server> servers = ServerRepository.GetServers();
     private List<string> cities = CitiesRepository.GetCities();
+
+    private void DeleteServer(int id)
+    {
+        ServerRepository.DeleteServer(id);
+    }
 }
