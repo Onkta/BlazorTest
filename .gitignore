@@ -37,6 +37,7 @@
 *.hex
 
 # Debug files
+*Debug/
 *.dSYM/
 *.su
 *.idb
@@ -53,5 +54,3 @@ dkms.conf
 
 # debug information files
 *.dwo
-
-Debug/
