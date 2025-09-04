@@ -16,6 +16,7 @@ namespace BlazorTest.Models
             new Server{ Name = "Server_6", City = "Berlin", ServerID = 6},
             new Server{ Name = "Server_7", City = "Freiburg", ServerID = 7},
             new Server{ Name = "Server_8", City = "Karlsruhe", ServerID = 8},
+            new Server{ Name = "Server_9", City = "Karlsruhe", ServerID = 9},
         };
 
         public static void AddServer(Server server)
