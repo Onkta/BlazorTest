@@ -19,6 +19,15 @@ namespace BlazorTest.Models
             new Server{ Name = "Server_9", City = "Karlsruhe", ServerID = 9},
         };
 
+        public static void UpdateServer(Server server)
+        {
+            var serverToUpdate = _servers.FirstOrDefault(s => s.ServerID == server.ServerID);
+
+            serverToUpdate.Name = server.Name;
+            serverToUpdate.City = server.City;
+            serverToUpdate.IsOnline = server.IsOnline;
+        }
+
         public static void AddServer(Server server)
         {
             var maxID = _servers.Max(s => s.ServerID);

@@ -4,7 +4,9 @@
 
 @if(s1 != null)
 {
-    <EditForm Model="s1">
+    <EditForm Model="s1" FormName="EditServerForm" OnSubmit="Submit">
+        <InputNumber @bind-value="s1.ServerID" hidden></InputNumber>
+
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Servername</label>
             <InputText type="text" class="form-control" id="exampleFormControlInput1" placeholder="ServerName..." @bind-value="s1.Name">
@@ -22,6 +24,7 @@
         </div>
 
         <div class="mb-3">
+            <button type="submit">submit</button>
             <a class="btn-sm btn-secondary" href="servers">Close</a>
         </div>
 
@@ -32,10 +35,16 @@
     [Parameter]
     public int Id { get; set; }
 
-    private Server s1;
+    [SupplyParameterFromForm(FormName = "EditServerForm")]
+    private Server s1 { get; set; }
 
     protected override void OnParametersSet()
     {
-        s1 = ServerRepository.GetServerByID(Id);
+        s1 ??= ServerRepository.GetServerByID(Id);
+    }
+
+    private void Submit()
+    {
+        ServerRepository.UpdateServer(s1);
     }
 }
