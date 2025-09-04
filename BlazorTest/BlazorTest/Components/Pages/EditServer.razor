@@ -4,8 +4,10 @@
 
 @if(s1 != null)
 {
-    <EditForm Model="s1" FormName="EditServerForm" OnSubmit="Submit">
+    <EditForm Model="s1" FormName="EditServerForm" OnValidSubmit="Submit">
         <InputNumber @bind-value="s1.ServerID" hidden></InputNumber>
+        <DataAnnotationsValidator></DataAnnotationsValidator>
+        <ValidationSummary></ValidationSummary>
 
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Servername</label>
