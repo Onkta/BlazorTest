@@ -16,7 +16,7 @@ namespace BlazorTest.Models
         public string? City { get; set; }
 
         public Server()
-        {
+        { 
             Random random = new Random();
             int randomNumber = random.Next(0,2);
             IsOnline = randomNumber == 0? false : true;
