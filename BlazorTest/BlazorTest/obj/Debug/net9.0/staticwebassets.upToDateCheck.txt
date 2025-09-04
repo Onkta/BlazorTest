@@ -72,7 +72,6 @@ wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
 \\Mac\Home\Desktop\HomeGit\BlazorTest\BlazorTest\BlazorTest\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
 \\Mac\Home\Desktop\HomeGit\BlazorTest\BlazorTest\BlazorTest\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
 \\Mac\Home\Desktop\HomeGit\BlazorTest\BlazorTest\BlazorTest\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
-\\Mac\Home\Desktop\HomeGit\BlazorTest\BlazorTest\BlazorTest\wwwroot\lib\bootstrap\dist\css\bootstrap.css
 \\Mac\Home\Desktop\HomeGit\BlazorTest\BlazorTest\BlazorTest\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 \\Mac\Home\Desktop\HomeGit\BlazorTest\BlazorTest\BlazorTest\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
 \\Mac\Home\Desktop\HomeGit\BlazorTest\BlazorTest\BlazorTest\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
@@ -92,3 +91,4 @@ wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
 \\Mac\Home\Desktop\HomeGit\BlazorTest\BlazorTest\BlazorTest\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
 \\Mac\Home\Desktop\HomeGit\BlazorTest\BlazorTest\BlazorTest\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
 \\Mac\Home\Desktop\HomeGit\BlazorTest\BlazorTest\BlazorTest\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+\\Mac\Home\Desktop\HomeGit\BlazorTest\BlazorTest\BlazorTest\wwwroot\lib\bootstrap\dist\css\bootstrap.css
